@@ -1,0 +1,20 @@
+{
+  "name": "vux-cli3-loader",
+  "version": "1.0.1",
+  "description": "vux-cli3-loader",
+  "main": "index.js",
+  "keywords": [
+    "vux", "vue", "cli3", "loader"
+  ],
+  "author": "AresBug 909840978@qq.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AresBug/vux-cli3-loader"
+  },
+  "license": "MIT",
+  "scripts": {},
+  "dependencies": {
+    "js-yaml": "^3.12.1"
+  },
+  "devDependencies": {}
+}
