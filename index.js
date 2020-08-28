@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", {
 function vuxCli3Loader(source) {
   const filename = this.query && this.query.filename ? this.query.filename : 'vux'
   if (!global.vuxCli3Locales) {
-    const localesPath = path.resolve(`node_modules/${filename}/src/locales/all.yml`)
+    const localesPath = `${require.resolve(filename).split(`/${filename}/`)[0]}/${filename}/src/locales/all.yml`
     global.vuxCli3Locales = fs.existsSync(localesPath) ? yaml.safeLoad(fs.readFileSync(localesPath, 'utf-8')) : {}
   }
 

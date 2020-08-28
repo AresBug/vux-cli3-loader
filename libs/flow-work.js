@@ -9,8 +9,8 @@ exports.xIconWork = (source, filename) => {
     source = parseVirtualComponent(source, 'x-icon', function (query) {
       let size = query.objectList.size || 24
       let type = query.objectList.type
-      let svgPath = path.resolve(process.cwd(), `node_modules/${filename}/src/icons/${type}.svg`)
-  
+      let svgPath = `${require.resolve(filename).split(`/${filename}/`)[0]}/${filename}/src/icons/${type}.svg`
+
       // merge classname
       let className = `vux-x-icon vux-x-icon-${type}`
       if (query.objectList.class) {
