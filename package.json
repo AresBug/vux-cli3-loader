@@ -14,7 +14,7 @@
   "license": "MIT",
   "scripts": {},
   "dependencies": {
-    "js-yaml": "^3.12.1"
+    "js-yaml": "^4.1.1"
   },
   "devDependencies": {}
 }
